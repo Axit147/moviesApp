@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+}
+
+button:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+  transition: ease 0.5s;
+}
+
+.homeBtn {
+  font-size: 3rem;
+  backdrop-filter: blur(2px);
+  background: rgba(225, 225, 225, 0.3);
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  margin: 1rem 0 0 0;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+}
+
+.homeBtn:hover {
+  transition: ease 0.5s;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+}
+
+.blocked {
+  pointer-events: none !important;
+  opacity: 0.3 !important;
+}
+
+.content {
+  max-height: 0px;
+  overflow: hidden;
+  line-height: 25px;
+  padding-top: 1rem;
+  font-weight: 500;
+}
+
+.content div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.show {
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  z-index: 3;
+  height: auto;
+  max-height: 9999px;
+}
+
+.ab {
+  position: absolute;
+  z-index: 2;
+  transform: scale(1.05);
+  backdrop-filter: blur(10px) !important;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+.google {
+  background-color: #662d91;
+  margin: 1rem;
+}
+
+.imdb {
+  background-color: rgb(245, 197, 24);
+  color: black !important;
+  margin: 1rem 1rem 0;
+}
+
+.loading {
+  animation: load 1s infinite alternate;
+}
+@keyframes load {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
