@@ -85,9 +85,18 @@ button:hover {
 }
 @keyframes load {
   0% {
-    background-color: hsl(200, 20%, 70%);
+    background-color: hsl(210, 2%, 82%);
   }
   100% {
-    background-color: hsl(200, 20%, 95%);
+    background-color: hsla(210, 2%, 76%, 0.801);
   }
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.352);
+  border-radius: 5px;
 }

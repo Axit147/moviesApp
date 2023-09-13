@@ -117,6 +117,7 @@ cursor:pointer;
 text-transform: capitalize;
 background: transparent;
 color:inherit;
+outline: none;
 
 
 `
@@ -125,15 +126,17 @@ const Div = styled.section`
 color: antiquewhite;
 border-radius: .5rem;
 width: 100%;
+backdrop-filter: blur(2px);
 
 :hover{
-
-    backdrop-filter: blur(2px);
     background: rgba(225,225,225,0.1);
-    box-shadow: 0px 10px 15px rgb(0, 0, 0);
     color: white;
-    transition: ease .5s;
-    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5);
+    transition: ease .5s, scale .1s;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.25);
+}
+
+:active{
+    scale: 0.9;
 }
 `
 export default Populars

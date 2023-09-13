@@ -108,7 +108,7 @@ function Searched({ status, setStatus, filtered, setFiltered }) {
 
 
                                 <Cdiv layout className={isOpen === i ? 'ab' : ''}>
-                                    <img className='loading' src={item.Poster} alt="poster not available" />
+                                    <img className='loading' src={item.Poster} alt="poster not available" loading='lazy' />
                                     <h4>{item.Title}</h4>
                                     <div className={isOpen === i ? 'content show' : 'content'}>
                                         <p>Type : {item.Type}</p>
